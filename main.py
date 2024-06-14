@@ -50,19 +50,20 @@ openai_api_key = get_openai_api_key()
 st.markdown("## Upload the text file you want to summarize")
 uploaded_file = st.file_uploader("Choose a file", type="txt")
 
-# Output section
-st.markdown("### Here is your Summary:")
+# Check if both API key and file are provided
+inputs_ready = openai_api_key and uploaded_file
 
-if uploaded_file is not None:
-    file_input = StringIO(uploaded_file.getvalue().decode("utf-8")).read()
+# Add a button to trigger summarization
+if inputs_ready:
+    if st.button("Summarize"):
+        file_input = StringIO(uploaded_file.getvalue().decode("utf-8")).read()
 
-    if len(file_input.split(" ")) > 20000:
-        st.write("Please enter a shorter file. The maximum length is 20000 words.")
-    else:
-        if not openai_api_key:
-            st.warning('Please insert OpenAI API Key. Instructions [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)', icon="⚠️")
+        if len(file_input.split(" ")) > 20000:
+            st.write("Please enter a shorter file. The maximum length is 20000 words.")
         else:
             with st.spinner('Summarizing...'):
                 summary_output = summarize_text(file_input, openai_api_key)
                 if summary_output:
                     st.write(summary_output)
+else:
+    st.button("Summarize", disabled=True)
