@@ -40,7 +40,8 @@ def summarize_text(file_input, openai_api_key):
 # Page title and header
 st.set_page_config(page_title="AI Long Text Summarizer")
 st.header("AI Long Text Summarizer")
-st.markdown("ChatGPT cannot summarize long texts. Now you can do it with this app.")
+st.markdown("The free version of ChatGPT cannot summarize long texts. Now you can do it with this app."
+            "Just enter your openAI API key and upload the .txt file")
 
 # Input OpenAI API Key
 st.markdown("## Enter Your OpenAI API Key")
