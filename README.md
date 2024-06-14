@@ -3,7 +3,7 @@
 This project is a Streamlit application that leverages OpenAI's language model to summarize long text files. Users can upload a text file, and the application will provide a concise summary of the content.
 
 ## Features
-- Open this link: [This WebApp deployed on Streamlit]([https://docs.streamlit.io/](https://app-project-to-summarize-a-text-file-3ucspm2apvtfdcjdudv985.streamlit.app/))
+- Open this link: [This WebApp deployed on Streamlit](https://docs.streamlit.io/](https://app-project-to-summarize-a-text-file-3ucspm2apvtfdcjdudv985.streamlit.app/ )
 - Upload a text file and get a summary
 - Easy-to-use interface
 - Utilizes OpenAI's API for summarization
@@ -71,5 +71,5 @@ Here's a quick example of how to use the application:
 ## Links
 
 - [OpenAI API Key Instructions](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)
-- [The webapp deployed on Streamlit]([https://docs.streamlit.io/](https://app-project-to-summarize-a-text-file-3ucspm2apvtfdcjdudv985.streamlit.app/))
+- [The webapp deployed on Streamlit](https://docs.streamlit.io/](https://app-project-to-summarize-a-text-file-3ucspm2apvtfdcjdudv985.streamlit.app/ )
 
